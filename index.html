@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/libs/vanilla-calendar.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo header__logo" href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="header__right">
+                <ul class="social header__social">
+                    <li class="social__item header__social-item">
+                        <a class="social__link social__link--whatsapp header__social-link" href="#">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.6942 4.55454C19.6524 2.49241 16.941 1.22778 14.049 0.988745C11.1569 0.749713 8.27462 1.55202 5.92202 3.25094C3.56941 4.94987 1.90135 7.43358 1.21871 10.2541C0.536072 13.0745 0.883796 16.0461 2.19916 18.6328L0.907966 24.9015C0.894568 24.9638 0.894189 25.0283 0.906851 25.0909C0.919514 25.1534 0.944946 25.2127 0.981557 25.265C1.03519 25.3443 1.11175 25.4053 1.201 25.44C1.29026 25.4747 1.38797 25.4813 1.48109 25.459L7.62485 24.0027C10.2043 25.2848 13.1549 25.6102 15.9516 24.9209C18.7484 24.2317 21.21 22.5726 22.8983 20.2388C24.5866 17.905 25.3922 15.0479 25.1717 12.1759C24.9512 9.3039 23.719 6.60326 21.6942 4.55454ZM19.7786 19.8437C18.3659 21.2524 16.5468 22.1823 14.5776 22.5024C12.6084 22.8225 10.5884 22.5165 8.80232 21.6278L7.94598 21.204L4.17944 22.0961L4.19059 22.0492L4.9711 18.2582L4.55186 17.4308C3.63923 15.6385 3.31729 13.6033 3.63216 11.6167C3.94702 9.63021 4.88253 7.79431 6.30467 6.37202C8.09161 4.58563 10.5149 3.58209 13.0416 3.58209C15.5684 3.58209 17.9916 4.58563 19.7786 6.37202C19.7938 6.38947 19.8102 6.40586 19.8276 6.42108C21.5924 8.21208 22.5776 10.6281 22.5684 13.1425C22.5593 15.6569 21.5564 18.0657 19.7786 19.8437Z" fill="#E67205" />
+                                <path d="M19.4439 17.063C18.9823 17.79 18.2531 18.6798 17.3365 18.9005C15.7309 19.2886 13.2667 18.9139 10.2004 16.055L10.1625 16.0215C7.46637 13.5217 6.76614 11.441 6.93562 9.79081C7.02928 8.85419 7.8098 8.00678 8.46766 7.45373C8.57167 7.36496 8.695 7.30176 8.8278 7.26918C8.9606 7.2366 9.09918 7.23555 9.23246 7.26611C9.36574 7.29666 9.49002 7.35798 9.59536 7.44516C9.70071 7.53233 9.78419 7.64295 9.83914 7.76816L10.8315 9.9982C10.896 10.1428 10.9199 10.3022 10.9006 10.4594C10.8814 10.6165 10.8197 10.7655 10.7222 10.8902L10.2205 11.5414C10.1128 11.6758 10.0478 11.8394 10.0339 12.0111C10.02 12.1828 10.0578 12.3547 10.1424 12.5048C10.4234 12.9976 11.0969 13.7224 11.8439 14.3936C12.6824 15.1518 13.6124 15.8454 14.2011 16.0818C14.3586 16.1461 14.5318 16.1618 14.6984 16.1268C14.8649 16.0919 15.0172 16.0078 15.1355 15.8855L15.7175 15.299C15.8298 15.1883 15.9695 15.1093 16.1223 15.0701C16.2751 15.0309 16.4355 15.033 16.5872 15.076L18.9444 15.745C19.0744 15.7849 19.1936 15.854 19.2928 15.947C19.3921 16.04 19.4687 16.1545 19.5169 16.2817C19.5651 16.4088 19.5836 16.5454 19.571 16.6808C19.5583 16.8162 19.5149 16.9469 19.4439 17.063Z" fill="#E67205" />
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#">
+                            <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.03908 7.67733L20.8296 0.0928264C21.7481 -0.237008 22.5503 0.31555 22.2527 1.6961L22.2544 1.69439L18.8847 17.4738C18.635 18.5925 17.9662 18.8645 17.0305 18.3375L11.899 14.5784L9.42395 16.9484C9.15027 17.2204 8.91935 17.45 8.3891 17.45L8.75344 12.2593L18.2638 3.71931C18.6778 3.35717 18.1714 3.15315 17.6258 3.51359L5.87295 10.8686L0.806455 9.2976C-0.293396 8.95076 -0.317343 8.20438 1.03908 7.67733Z" fill="#E67205" />
+                            </svg>
+                            Telegram
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn cf-button white open-modal header__callback" data-id="callback">
+                    Перезвоните мне
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+    <main class="content" id="content">
+        <section class="section intro">
+            <div class="swiper intro__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide intro__slide">
+                        <img class="intro__slide-img" src="img/intro-slide-1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide intro__slide">
+                        <img class="intro__slide-img" src="img/intro-slide-2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide intro__slide">
+                        <img class="intro__slide-img" src="img/intro-slide-1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide intro__slide">
+                        <img class="intro__slide-img" src="img/intro-slide-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="intro__info">
+                <div class="container">
+                    <div class="intro__info-inner">
+                        <h1 class="intro__title intro__title--mobile">
+                            Квадро-туризм в&nbsp;Липецкой и&nbsp;Воронежкой областях от&nbsp;7&nbsp;500&nbsp;₽
+                        </h1>
+                        <ul class="intro__features">
+                            <li class="intro__feature">
+                                <span></span>
+                                Проведите незабываемое время с&nbsp;семьёй и&nbsp;друзьями
+                            </li>
+                            <li class="intro__feature">
+                                <span></span>
+                                Исследуйте лесные тропы и&nbsp;поля
+                            </li>
+                            <li class="intro__feature">
+                                <span></span>
+                                Насладитесь скоростью и&nbsp;адреналином
+                            </li>
+                        </ul>
+                        <div class="intro__info-bottom">
+                            <h1 class="intro__title">
+                                Квадро-туризм в&nbsp;Липецкой и&nbsp;Воронежкой областях от&nbsp;7&nbsp;500&nbsp;₽
+                            </h1>
+                            <a class="cf-button orange big ttu intro__button xs-stretch" href="#quiz">
+                                Подобрать маршрут
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap-top features">
+            <div class="container">
+                <ul class="features__list">
+                    <li class="features__card" style="background-image: url('img/feature-1.jpg');" tabindex="0">
+                        <div class="features__card-number">
+                            01
+                        </div>
+                        <div class="features__card-title">
+                            Безопасные авторские маршруты
+                        </div>
+                    </li>
+                    <li class="features__card" style="background-image: url('img/feature-2.jpg');" tabindex="0">
+                        <div class="features__card-number">
+                            02
+                        </div>
+                        <div class="features__card-title">
+                            Опытные инструкторы
+                        </div>
+                    </li>
+                    <li class="features__card" style="background-image: url('img/feature-3.jpg');" tabindex="0">
+                        <div class="features__card-number">
+                            03
+                        </div>
+                        <div class="features__card-title">
+                            Трассы разного уровня сложности
+                        </div>
+                    </li>
+                    <li class="features__card" style="background-image: url('img/feature-4.jpg');" tabindex="0">
+                        <div class="features__card-number">
+                            04
+                        </div>
+                        <div class="features__card-title">
+                            Мощная современная техника
+                        </div>
+                    </li>
+                    <li class="features__card" style="background-image: url('img/feature-5.jpg');" tabindex="0">
+                        <div class="features__card-number">
+                            05
+                        </div>
+                        <div class="features__card-title">
+                            Полная экипировка для катания
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="quiz" class="section section-gap-top quiz">
+            <div class="container">
+                <div class="section__header section__header--center quiz__header">
+                    <h2 class="section__title quiz__title">
+                        Подберите <span>за 1 минуту</span> подходящий маршрут и узнайте стоимость
+                    </h2>
+                </div>
+                <form class="form quiz__form">
+                    <div class="quiz__steps">
+                        <div class="quiz__step tab quiz__step--current">
+                            <aside class="quiz__sidebar">
+                                <div class="quiz__progress">
+                                    <div class="quiz__progress-title">
+                                        Осталось 6 вопросов из 6
+                                    </div>
+                                    <div class="quiz__progress-items">
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item"></span>
+                                        <span class="quiz__progress-item"></span>
+                                        <span class="quiz__progress-item"></span>
+                                        <span class="quiz__progress-item"></span>
+                                    </div>
+                                </div>
+                                <div class="quiz__step-title">
+                                    Ознакомьтесь и выберите маршрут
+                                </div>
+                                <div class="quiz__fields">
+                                    <div class="quiz__radios">
+                                        <label class="radio quiz__radio tab__button" tabindex="0" data-content="route1">
+                                            <input type="radio" name="route" value="Маршрут «По следам истории»" data-price="4000" checked required>
+                                            <span>
+                                                1. Маршрут «По следам истории»
+                                            </span>
+                                        </label>
+                                        <label class="radio quiz__radio tab__button" tabindex="0" data-content="route2">
+                                            <input type="radio" name="route" value="Маршрут «Зелёное кольцо»"  data-price="4000" required>
+                                            <span>
+                                                2. Маршрут «Зелёное кольцо»
+                                            </span>
+                                        </label>
+                                        <label class="radio quiz__radio tab__button" tabindex="0" data-content="route3">
+                                            <input type="radio" name="route" value="Маршрут «Тайные тропы»" data-price="5000" required>
+                                            <span>
+                                                3. Маршрут «Тайные тропы»
+                                            </span>
+                                        </label>
+                                        <label class="radio quiz__radio tab__button" tabindex="0" data-content="route4">
+                                            <input type="radio" name="route" value="Маршрут «В поисках приключений»" data-price="3000" required>
+                                            <span>
+                                                4. Маршрут «В поисках приключений»
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="quiz__buttons">
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--next">
+                                        Следующий шаг <i></i>
+                                    </button>
+                                </div>
+                            </aside>
+                            <div class="quiz__contents">
+                                <div id="route1" class="quiz__content tab__content">
+                                    <div class="route">
+                                        <div class="route__map">
+                                            <iframe src="https://yandex.uz/map-widget/v1/?from=mapframe&ll=39.247804%2C52.410073&mode=usermaps&source=mapframe&um=constructor%3A79aacf6b0c903f3d3330f8dcc825c785a907089e41e64d15caad556fe6e5d284&utm_source=mapframe&z=13" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+                                        </div>
+                                        <div class="route__info">
+                                            <div class="route__name">
+                                                Маршрут «По следам истории»
+                                            </div>
+                                            <div class="route__meta">
+                                                <div class="route__meta-item">
+                                                    <i class="route__meta-icon route__meta-icon--duration" aria-hidden="true"></i>
+                                                    <strong>Продолжительность:</strong> 1 час
+                                                </div>
+                                                <div class="route__meta-item">
+                                                    <i class="route__meta-icon route__meta-icon--price" aria-hidden="true"></i>
+                                                    <strong>Стоимость:</strong> От 4000 рублей
+                                                </div>
+                                            </div>
+                                            <div class="route__description">
+                                                <h4>О маршруте:</h4>
+                                                <p>
+                                                    Вас ждёт захватывающий участок через поля, виражи по лесному массиву, вы прокатитесь вдоль водохранилища, а незабываемая красота местной природы пробудит непередаваемое чувство свободы.
+                                                </p>
+                                                <h4>
+                                                    Одежда:
+                                                </h4>
+                                                <p>
+                                                    Одевайтесь по погоде в удобную одежду и обувь, которую не страшно замарать. Желательно не белая, не маркая.
+                                                </p>
+                                                <h4>
+                                                    Взять с собой:
+                                                </h4>
+                                                <p>
+                                                    Паспорт и водительское удостоверение (если маршрут с водителем — права не нужны). Ребёнок — свид-во о рождении
+                                                </p>
+                                                <h4>
+                                                    Выдается на месте:
+                                                </h4>
+                                                <p>
+                                                    Защитная экипировка: подшлемник; шлем; защитные очки; перчатки; непромокаемый костюм (куртка и брюки)
+                                                </p>
+                                                <h4>
+                                                    Ограничения:
+                                                </h4>
+                                                <p>
+                                                    Для управления квадроциклом допускаются лица достигшие 16 летнего возраста. До 18 лет, требуется сопровождение взрослого.
+                                                </p>
+                                                <p>
+                                                    <strong>Грузоподъемность:</strong> 
+                                                    Вес человека до 150 кг
+                                                </p>
+                                                <p>
+                                                   <strong>Точка сбора:</strong> Указать для каждого маршрута локально
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="route2" class="quiz__content tab__content tab__content--active">
+                                    <div class="route">
+                                        <div class="route__map">
+                                            <iframe src="https://yandex.uz/map-widget/v1/?from=mapframe&ll=39.247804%2C52.410073&mode=usermaps&source=mapframe&um=constructor%3A79aacf6b0c903f3d3330f8dcc825c785a907089e41e64d15caad556fe6e5d284&utm_source=mapframe&z=13" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+                                        </div>
+                                        <div class="route__info">
+                                            <div class="route__name">
+                                                Маршрут «Зелёное кольцо»
+                                            </div>
+                                            <div class="route__meta">
+                                                <div class="route__meta-item">
+                                                    <i class="route__meta-icon route__meta-icon--duration" aria-hidden="true"></i>
+                                                    <strong>Продолжительность:</strong> 1 час
+                                                </div>
+                                                <div class="route__meta-item">
+                                                    <i class="route__meta-icon route__meta-icon--price" aria-hidden="true"></i>
+                                                    <strong>Стоимость:</strong> От 4000 рублей
+                                                </div>
+                                            </div>
+                                            <div class="route__description">
+                                                <h4>О маршруте:</h4>
+                                                <p>
+                                                    Вас ждёт захватывающий участок через поля, виражи по лесному массиву, вы прокатитесь вдоль водохранилища, а незабываемая красота местной природы пробудит непередаваемое чувство свободы.
+                                                </p>
+                                                <h4>
+                                                    Одежда:
+                                                </h4>
+                                                <p>
+                                                    Одевайтесь по погоде в удобную одежду и обувь, которую не страшно замарать. Желательно не белая, не маркая.
+                                                </p>
+                                                <h4>
+                                                    Взять с собой:
+                                                </h4>
+                                                <p>
+                                                    Паспорт и водительское удостоверение (если маршрут с водителем — права не нужны). Ребёнок — свид-во о рождении
+                                                </p>
+                                                <h4>
+                                                    Выдается на месте:
+                                                </h4>
+                                                <p>
+                                                    Защитная экипировка: подшлемник; шлем; защитные очки; перчатки; непромокаемый костюм (куртка и брюки)
+                                                </p>
+                                                <h4>
+                                                    Ограничения:
+                                                </h4>
+                                                <p>
+                                                    Для управления квадроциклом допускаются лица достигшие 16 летнего возраста. До 18 лет, требуется сопровождение взрослого.
+                                                </p>
+                                                <p>
+                                                    <strong>Грузоподъемность:</strong> 
+                                                    Вес человека до 150 кг
+                                                </p>
+                                                <p>
+                                                   <strong>Точка сбора:</strong> Указать для каждого маршрута локально
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="route3" class="quiz__content tab__content">
+                                    <div class="route">
+                                        <div class="route__map">
+                                            <iframe src="https://yandex.uz/map-widget/v1/?from=mapframe&ll=39.247804%2C52.410073&mode=usermaps&source=mapframe&um=constructor%3A79aacf6b0c903f3d3330f8dcc825c785a907089e41e64d15caad556fe6e5d284&utm_source=mapframe&z=13" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+                                        </div>
+                                        <div class="route__info">
+                                            <div class="route__name">
+                                                Маршрут «Тайные тропы»
+                                            </div>
+                                            <div class="route__meta">
+                                                <div class="route__meta-item">
+                                                    <i class="route__meta-icon route__meta-icon--duration" aria-hidden="true"></i>
+                                                    <strong>Продолжительность:</strong> 1 час
+                                                </div>
+                                                <div class="route__meta-item">
+                                                    <i class="route__meta-icon route__meta-icon--price" aria-hidden="true"></i>
+                                                    <strong>Стоимость:</strong> От 5000 рублей
+                                                </div>
+                                            </div>
+                                            <div class="route__description">
+                                                <h4>О маршруте:</h4>
+                                                <p>
+                                                    Вас ждёт захватывающий участок через поля, виражи по лесному массиву, вы прокатитесь вдоль водохранилища, а незабываемая красота местной природы пробудит непередаваемое чувство свободы.
+                                                </p>
+                                                <h4>
+                                                    Одежда:
+                                                </h4>
+                                                <p>
+                                                    Одевайтесь по погоде в удобную одежду и обувь, которую не страшно замарать. Желательно не белая, не маркая.
+                                                </p>
+                                                <h4>
+                                                    Взять с собой:
+                                                </h4>
+                                                <p>
+                                                    Паспорт и водительское удостоверение (если маршрут с водителем — права не нужны). Ребёнок — свид-во о рождении
+                                                </p>
+                                                <h4>
+                                                    Выдается на месте:
+                                                </h4>
+                                                <p>
+                                                    Защитная экипировка: подшлемник; шлем; защитные очки; перчатки; непромокаемый костюм (куртка и брюки)
+                                                </p>
+                                                <h4>
+                                                    Ограничения:
+                                                </h4>
+                                                <p>
+                                                    Для управления квадроциклом допускаются лица достигшие 16 летнего возраста. До 18 лет, требуется сопровождение взрослого.
+                                                </p>
+                                                <p>
+                                                    <strong>Грузоподъемность:</strong> 
+                                                    Вес человека до 150 кг
+                                                </p>
+                                                <p>
+                                                   <strong>Точка сбора:</strong> Указать для каждого маршрута локально
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="route4" class="quiz__content tab__content">
+                                    <div class="route">
+                                        <div class="route__map">
+                                            <iframe src="https://yandex.uz/map-widget/v1/?from=mapframe&ll=39.247804%2C52.410073&mode=usermaps&source=mapframe&um=constructor%3A79aacf6b0c903f3d3330f8dcc825c785a907089e41e64d15caad556fe6e5d284&utm_source=mapframe&z=13" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+                                        </div>
+                                        <div class="route__info">
+                                            <div class="route__name">
+                                                Маршрут «В поисках приключений»
+                                            </div>
+                                            <div class="route__meta">
+                                                <div class="route__meta-item">
+                                                    <i class="route__meta-icon route__meta-icon--duration" aria-hidden="true"></i>
+                                                    <strong>Продолжительность:</strong> 1 час
+                                                </div>
+                                                <div class="route__meta-item">
+                                                    <i class="route__meta-icon route__meta-icon--price" aria-hidden="true"></i>
+                                                    <strong>Стоимость:</strong> От 3000 рублей
+                                                </div>
+                                            </div>
+                                            <div class="route__description">
+                                                <h4>О маршруте:</h4>
+                                                <p>
+                                                    Вас ждёт захватывающий участок через поля, виражи по лесному массиву, вы прокатитесь вдоль водохранилища, а незабываемая красота местной природы пробудит непередаваемое чувство свободы.
+                                                </p>
+                                                <h4>
+                                                    Одежда:
+                                                </h4>
+                                                <p>
+                                                    Одевайтесь по погоде в удобную одежду и обувь, которую не страшно замарать. Желательно не белая, не маркая.
+                                                </p>
+                                                <h4>
+                                                    Взять с собой:
+                                                </h4>
+                                                <p>
+                                                    Паспорт и водительское удостоверение (если маршрут с водителем — права не нужны). Ребёнок — свид-во о рождении
+                                                </p>
+                                                <h4>
+                                                    Выдается на месте:
+                                                </h4>
+                                                <p>
+                                                    Защитная экипировка: подшлемник; шлем; защитные очки; перчатки; непромокаемый костюм (куртка и брюки)
+                                                </p>
+                                                <h4>
+                                                    Ограничения:
+                                                </h4>
+                                                <p>
+                                                    Для управления квадроциклом допускаются лица достигшие 16 летнего возраста. До 18 лет, требуется сопровождение взрослого.
+                                                </p>
+                                                <p>
+                                                    <strong>Грузоподъемность:</strong> 
+                                                    Вес человека до 150 кг
+                                                </p>
+                                                <p>
+                                                   <strong>Точка сбора:</strong> Указать для каждого маршрута локально
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__step">
+                            <aside class="quiz__sidebar">
+                                <div class="quiz__progress">
+                                    <div class="quiz__progress-title">
+                                        Осталось 5 вопросов из 6
+                                    </div>
+                                    <div class="quiz__progress-items">
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item"></span>
+                                        <span class="quiz__progress-item"></span>
+                                        <span class="quiz__progress-item"></span>
+                                    </div>
+                                </div>
+                                <div class="quiz__step-title">
+                                    Выберите дату и время
+                                </div>
+                                <div class="quiz__fields">
+                                    <div class="quiz__calendar"></div>
+                                    <div class="select">
+                                        <select name="time" required>
+                                            <option value="">Впишите удобное время</option>
+                                            <option value="6:00 — 7:00">6:00 — 7:00</option>
+                                            <option value="7:00 — 8:00">7:00 — 8:00</option>
+                                            <option value="8:00 — 9:00">8:00 — 9:00</option>
+                                            <option value="9:00 — 10:00">9:00 — 10:00</option>
+                                            <option value="10:00 — 11:00">10:00 — 11:00</option>
+                                            <option value="11:00 — 12:00">11:00 — 12:00</option>
+                                            <option value="12:00 — 13:00">12:00 — 13:00</option>
+                                            <option value="13:00 — 14:00">13:00 — 14:00</option>
+                                            <option value="14:00 — 15:00">14:00 — 15:00</option>
+                                            <option value="15:00 — 16:00">15:00 — 16:00</option>
+                                            <option value="16:00 — 17:00">16:00 — 17:00</option>
+                                            <option value="17:00 — 18:00">17:00 — 18:00</option>
+                                            <option value="18:00 — 19:00">18:00 — 19:00</option>
+                                            <option value="19:00 — 20:00">19:00 — 20:00</option>
+                                            <option value="20:00 — 21:00">20:00 — 21:00</option>
+                                            <option value="21:00 — 22:00">21:00 — 22:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="quiz__buttons">
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--prev">
+                                        <i></i> Назад
+                                    </button>
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--next">
+                                        Следующий шаг <i></i>
+                                    </button>
+                                </div>
+                            </aside>
+                            <div class="quiz__contents">
+                                <div class="quiz__result">
+                                    <div class="quiz__result-title">
+                                        Информация о бронировании
+                                    </div>
+                                    <div class="quiz__result-items">
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Маршрут</strong> <span>«Зелёное кольцо»</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Дата:</strong> <span>17.05.24</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Время:</strong> <span>16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__result-price">
+                                        <strong>
+                                            Общая стоимость проката:
+                                        </strong>
+                                        <span>
+                                            3 000₽
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__step">
+                            <aside class="quiz__sidebar">
+                                <div class="quiz__progress">
+                                    <div class="quiz__progress-title">
+                                        Осталось 4 вопросов из 6
+                                    </div>
+                                    <div class="quiz__progress-items">
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item"></span>
+                                        <span class="quiz__progress-item"></span>
+                                        <span class="quiz__progress-item"></span>
+                                    </div>
+                                </div>
+                                <div class="quiz__step-title">
+                                    Какие дополнительные услуги вам понадобятся?
+                                </div>
+                                <div class="quiz__fields">
+                                    <div class="quiz__checkboxes">
+                                        <label class="checkbox quiz__checkbox" tabindex="0">
+                                            <input type="checkbox" name="delivery" value="Маршрут «По следам истории»" data-price="4000">
+                                            <span>
+                                                Доставку до места старта на маршрут
+                                            </span>
+                                        </label>
+                                        <label class="checkbox quiz__checkbox" tabindex="0">
+                                            <input type="checkbox" name="photoshoot" value="Фотосессия на маршруте" data-price="4000">
+                                            <span>
+                                                Фотосессия на маршруте
+                                            </span>
+                                        </label>
+                                        <label class="checkbox quiz__checkbox" tabindex="0">
+                                            <input type="checkbox" name="catering" value="Организация питания" data-price="4000">
+                                            <span>
+                                                Организация питания
+                                            </span>
+                                        </label>
+                                        <label class="checkbox quiz__checkbox" tabindex="0">
+                                            <input type="checkbox" name="specialClothing" value="Спец одежда" data-price="4000">
+                                            <span>
+                                                Спец одежда
+                                            </span>
+                                        </label>
+                                        <label class="checkbox quiz__checkbox" tabindex="0">
+                                            <input type="checkbox" name="driverRoute" value="Маршрут с водителем" data-price="4000">
+                                            <span>
+                                                Маршрут с водителем
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="quiz__buttons">
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--prev">
+                                        <i></i> Назад
+                                    </button>
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--next">
+                                        Следующий шаг <i></i>
+                                    </button>
+                                </div>
+                            </aside>
+                            <div class="quiz__contents">
+                                <div class="quiz__result">
+                                    <div class="quiz__result-title">
+                                        Информация о бронировании
+                                    </div>
+                                    <div class="quiz__result-items">
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Маршрут</strong> <span>«Зелёное кольцо»</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Дата:</strong> <span>17.05.24</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Время:</strong> <span>16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__result-price">
+                                        <strong>
+                                            Общая стоимость проката:
+                                        </strong>
+                                        <span>
+                                            3 000₽
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__step">
+                            <aside class="quiz__sidebar">
+                                <div class="quiz__progress">
+                                    <div class="quiz__progress-title">
+                                        Осталось 3 вопросов из 6
+                                    </div>
+                                    <div class="quiz__progress-items">
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item"></span>
+                                        <span class="quiz__progress-item"></span>
+                                    </div>
+                                </div>
+                                <div class="quiz__step-title">
+                                    Количество человек и квадроциклов
+                                </div>
+                                <div class="quiz__step-description">
+                                    <p>
+                                        <strong>*</strong> На 1 квадроцикле помещаются 2 человека: вы можете поехать вдвоём или для каждого забронировать отдельно.
+                                    </p>
+                                    <p>
+                                       <strong>**</strong> Предусмотрен маршрут с водителем, где за рулём будет сидеть опытный водитель (инструктор)
+                                    </p>
+                                </div>
+                                <div class="quiz__fields">
+                                    <div class="quiz__quantities">
+                                        <div class="quiz__quantity">
+                                            <div class="quiz__quantity-title">
+                                                Количество человек:
+                                            </div>
+                                            <div class="quantity">
+                                                <button class="btn quantity__button quantity__button--decrease">
+                                                    -
+                                                </button>
+                                                <input min="1" max="50" type="number" name="person" class="quantity__input" value="1" data-price="100">
+                                                <button class="btn quantity__button quantity__button--increase">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="quiz__quantity">
+                                            <div class="quiz__quantity-title">
+                                                Количество квадроциклов:
+                                            </div>
+                                            <div class="quantity">
+                                                <button class="btn quantity__button quantity__button--decrease">
+                                                    -
+                                                </button>
+                                                <input min="1" max="50" type="number" name="person" class="quantity__input" value="1" data-price="200">
+                                                <button class="btn quantity__button quantity__button--increase">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="quiz__quantity">
+                                            <div class="quiz__quantity-title">
+                                                Количество водителей (инструкторов): 
+                                            </div>
+                                            <div class="quantity">
+                                                <button class="btn quantity__button quantity__button--decrease">
+                                                    -
+                                                </button>
+                                                <input min="1" max="50" type="number" name="person" class="quantity__input" value="1" data-price="2400">
+                                                <button class="btn quantity__button quantity__button--increase">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quiz__buttons">
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--prev">
+                                        <i></i> Назад
+                                    </button>
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--next">
+                                        Следующий шаг <i></i>
+                                    </button>
+                                </div>
+                            </aside>
+                            <div class="quiz__contents">
+                                <div class="quiz__result">
+                                    <div class="quiz__result-title">
+                                        Информация о бронировании
+                                    </div>
+                                    <div class="quiz__result-items">
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Маршрут</strong> <span>«Зелёное кольцо»</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Дата:</strong> <span>17.05.24</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Время:</strong> <span>16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__result-price">
+                                        <strong>
+                                            Общая стоимость проката:
+                                        </strong>
+                                        <span>
+                                            3 000₽
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__step tab">
+                            <aside class="quiz__sidebar">
+                                <div class="quiz__progress">
+                                    <div class="quiz__progress-title">
+                                        Осталось 2 вопросов из 6
+                                    </div>
+                                    <div class="quiz__progress-items">
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item"></span>
+                                    </div>
+                                </div>
+                                <div class="quiz__step-title">
+                                    Выберите модель квадроцикла
+                                </div>
+                                <div class="quiz__fields">
+                                    <div class="quiz__radios">
+                                        <label class="radio quiz__radio tab__button" tabindex="0" data-content="model1">
+                                            <input type="radio" name="model" value="Квадроцикл CF MOTO X6 EFI - 38 л.с" data-price="4000" required>
+                                            <span>
+                                                Квадроцикл CF MOTO X6 EFI - 38 л.с
+                                            </span>
+                                        </label>
+                                        <label class="radio quiz__radio tab__button" tabindex="0" data-content="model2">
+                                            <input type="radio" name="model" value="Маршрут «Зелёное кольцо»"  data-price="45000" required>
+                                            <span>
+                                                Квадроцикл CF MOTO X8 EFI - 63л.с.
+                                            </span>
+                                        </label>
+                                        <label class="radio quiz__radio tab__button" tabindex="0" data-content="model3">
+                                            <input type="radio" name="model" value="Маршрут «Тайные тропы»" data-price="56000" checked  required>
+                                            <span>
+                                                Квадроцикл CFMOTO CFORCE 1000 EPS NEW - 90 л.с. 
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div id="model1" class="tab__content">
+                                        <img src="img/feature-1.jpg" alt="" class="quiz__radio-img" loading="lazy">
+                                    </div>
+                                    <div id="model2" class="tab__content">
+                                        <img src="img/feature-2.jpg" alt="" class="quiz__radio-img" loading="lazy">
+                                    </div>
+                                    <div id="model3" class="tab__content tab__content--active">
+                                        <img src="img/feature-3.jpg" alt="" class="quiz__radio-img" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="quiz__buttons">
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--prev">
+                                        <i></i> Назад
+                                    </button>
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--next">
+                                        Следующий шаг <i></i>
+                                    </button>
+                                </div>
+                            </aside>
+                            <div class="quiz__contents">
+                                <div class="quiz__result">
+                                    <div class="quiz__result-title">
+                                        Информация о бронировании
+                                    </div>
+                                    <div class="quiz__result-items">
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Маршрут</strong> <span>«Зелёное кольцо»</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Дата:</strong> <span>17.05.24</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Время:</strong> <span>16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__result-price">
+                                        <strong>
+                                            Общая стоимость проката:
+                                        </strong>
+                                        <span>
+                                            3 000₽
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__step quiz__step--full tab">
+                            <div class="quiz__contents">
+                                <section class="section rules quiz__rules">
+                                    <div class="section__header section__header--center">
+                                        <h2 class="section__title section__title--small section__title--ttu">
+                                            Важно знать!
+                                        </h2>
+                                    </div>
+                                    <ul class="rules__list">
+                                        <li class="rule-card" tabindex="0">
+                                            <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-1.svg');"></i>
+                                            <div class="rule-card__title">
+                                                Прибытие
+                                            </div>
+                                            <div class="rule-card__description">
+                                                Встреча за 20–30 минут до запланированного времени начала тура.
+                                            </div>
+                                        </li>
+                                        <li class="rule-card" tabindex="0">
+                                            <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-2.svg');"></i>
+                                            <div class="rule-card__title">
+                                                Инструктаж
+                                            </div>
+                                            <div class="rule-card__description">
+                                                Перед каждой поездкой проводится инструктаж по использованию ТС и технике вождения.
+                                            </div>
+                                        </li>
+                                        <li class="rule-card" tabindex="0">
+                                            <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-3.svg');"></i>
+                                            <div class="rule-card__title">
+                                                Маршрут
+                                            </div>
+                                            <div class="rule-card__description">
+                                                Время отправления и маршрут поездки могут измениться из-за преобладающих погодных условий и организационных соображений.
+                                            </div>
+                                        </li>
+                                        <li class="rule-card" tabindex="0">
+                                            <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-4.svg');"></i>
+                                            <div class="rule-card__title">
+                                                Возраст
+                                            </div>
+                                            <div class="rule-card__description">
+                                                Техникой может управлять только человек, достигший шестнадцатилетнего возраста (имеются исключения, уточнять у администратора)
+                                            </div>
+                                        </li>
+                                        <li class="rule-card" tabindex="0">
+                                            <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-5.svg');"></i>
+                                            <div class="rule-card__title">
+                                                Ответственность
+                                            </div>
+                                            <div class="rule-card__description">
+                                                Водитель техники несёт ответственность за своё здоровье и за причинённый транспортному средству вред.
+                                            </div>
+                                        </li>
+                                        <li class="rule-card" tabindex="0">
+                                            <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-6.svg');"></i>
+                                            <div class="rule-card__title">
+                                                Безопасность
+                                            </div>
+                                            <div class="rule-card__description">
+                                                Все участники подписывают договор о принятии норм и правил безопасности. Также необходимо иметь при себе паспорт или права. Лицам в алкогольном опьянении услуги не оказываются.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="quiz__bottom">
+                                <div class="quiz__buttons">
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--prev">
+                                        <i></i> Назад
+                                    </button>
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--next">
+                                        Следующий шаг <i></i>
+                                    </button>
+                                </div>
+                                <label class="checkbox quiz__agreement" tabindex="0">
+                                    <input type="checkbox" name="agree" required>
+                                    <span>
+                                        Я все прочитал и согласен со всеми условиями и правилами
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__step quiz__step--finish">
+                            <aside class="quiz__sidebar">
+                                <div class="quiz__progress">
+                                    <div class="quiz__progress-title">
+                                        Все готово. Остался последний шаг
+                                    </div>
+                                    <div class="quiz__progress-items">
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item"></span>
+                                    </div>
+                                </div>
+                                <div class="quiz__step-title">
+                                    Куда с вами удобнее связаться, чтобы забронировать маршрут?
+                                </div>
+                                <div class="quiz__fields">
+                                    <div class="quiz__radios">
+                                        <label class="radio quiz__radio" tabindex="0">
+                                            <input type="radio" name="social" value="Квадроцикл CF MOTO X6 EFI - 38 л.с" required>
+                                            <span>
+                                                WhatsApp
+                                            </span>
+                                        </label>
+                                        <label class="radio quiz__radio" tabindex="0">
+                                            <input type="radio" name="social" value="Маршрут «Зелёное кольцо»" required>
+                                            <span>
+                                                Telegram
+                                            </span>
+                                        </label>
+                                        <label class="radio quiz__radio" tabindex="0">
+                                            <input type="radio" name="social" value="Маршрут «Тайные тропы»" checked required>
+                                            <span>
+                                                Перезвоните мне, у меня остались вопросы
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="form__group">
+                                        <span class="form__label">Имя <i>*</i></span>
+                                        <input class="form__field" type="text" placeholder="Ваше имя" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <span class="form__label">Номер телефона <i>*</i></span>
+                                        <input class="form__field" type="tel" placeholder="999 123 45 67" required>
+                                    </div>
+                                    <label class="checkbox quiz__agreement" tabindex="0">
+                                        <input type="checkbox" name="agree" required>
+                                        <span>
+                                            Даю свое согласие на обработку персональных данных
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="quiz__buttons">
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--prev">
+                                        <i></i> Назад
+                                    </button>
+                                    <button type="button" class="btn cf-button orange huge quiz__button quiz__button--next">
+                                        Забронировать маршрут
+                                    </button>
+                                </div>
+                            </aside>
+                            <div class="quiz__contents">
+                                <div class="quiz__result">
+                                    <div class="quiz__result-title">
+                                        Информация о бронировании
+                                    </div>
+                                    <div class="quiz__result-items">
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Маршрут</strong> <span>«Зелёное кольцо»</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Дата:</strong> <span>17.05.24</span>
+                                        </div>
+                                        <div class="quiz__result-item">
+                                            <i style="background-image: url(img/rule-icon-1.svg);"></i>
+                                            <strong>Время:</strong> <span>16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__result-price">
+                                        <strong>
+                                            Общая стоимость проката:
+                                        </strong>
+                                        <span>
+                                            3 000₽
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__step quiz__step--success">
+                            <aside class="quiz__sidebar">
+                                <div class="quiz__progress">
+                                    <div class="quiz__progress-title">
+                                        Все готово!
+                                    </div>
+                                    <div class="quiz__progress-items">
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                        <span class="quiz__progress-item quiz__progress-item--current"></span>
+                                    </div>
+                                </div>
+                                <div class="quiz__step-title">
+                                    Спасибо за заявку, мы с вами свяжемся в ближайшее время!
+                                </div>
+                            </aside>
+                            <div class="quiz__contents">
+                                <div class="quiz__success">
+                                    <div class="quiz__success-icon">
+                                        <svg width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.666 82.0001C163.666 127.103 127.103 163.667 81.9997 163.667C36.8965 163.667 0.333008 127.103 0.333008 82.0001C0.333008 36.8968 36.8965 0.333374 81.9997 0.333374C127.103 0.333374 163.666 36.8968 163.666 82.0001ZM114.914 57.2524C117.306 59.6444 117.306 63.5225 114.914 65.9145L74.0808 106.748C71.6888 109.14 67.8107 109.14 65.4187 106.748L49.0854 90.4145C46.6934 88.0225 46.6934 84.1444 49.0854 81.7524C51.4773 79.3605 55.3555 79.3605 57.7474 81.7524L69.7497 93.7547L88.0009 75.5036L106.252 57.2524C108.644 54.8604 112.522 54.8604 114.914 57.2524Z" fill="#E67205" />
+                                        </svg>
+                                    </div>
+                                    <div class="quiz__success-title">
+                                        Успех!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__result-price quiz__result-price--mobile">
+                        <strong>
+                            Общая стоимость проката:
+                        </strong>
+                        <span>
+                            3 000₽
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="section section-gap-top travel">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        Как выглядят наши путешествия
+                    </h2>
+                </div>
+                <div class="travel__inner">
+                    <div class="swiper slider travel__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide travel__slide">
+                                <img src="img/intro-slide-1.jpg" alt="" loading="lazy" class="travel__slide-img" loading="lazy">
+                            </div>
+                            <div class="swiper-slide travel__slide">
+                                <img src="img/intro-slide-2.jpg" alt="" loading="lazy" class="travel__slide-img" loading="lazy">
+                            </div>
+                            <div class="swiper-slide travel__slide">
+                                <img src="img/feature-1.jpg" alt="" loading="lazy" class="travel__slide-img" loading="lazy">
+                            </div>
+                            <div class="swiper-slide travel__slide">
+                                <img src="img/feature-2.jpg" alt="" loading="lazy" class="travel__slide-img" loading="lazy">
+                            </div>
+                            <div class="swiper-slide travel__slide">
+                                <img src="img/feature-3.jpg" alt="" loading="lazy" class="travel__slide-img" loading="lazy">
+                            </div>
+                            <div class="swiper-slide travel__slide">
+                                <img src="img/feature-4.jpg" alt="" loading="lazy" class="travel__slide-img" loading="lazy">
+                            </div>
+                            <div class="swiper-slide travel__slide">
+                                <img src="img/feature-5.jpg" alt="" loading="lazy" class="travel__slide-img" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="slider__nav travel__slider-nav">
+                            <button class="btn slider__nav-btn slider__nav-btn--prev travel__slider-nav--prev">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.827 8.13942L4.39808 8.13942L10.5664 1.97115L8.99946 0.415283L0.171875 9.24287L8.99946 18.0705L10.5553 16.5146L4.39808 10.3463L17.827 10.3463V8.13942Z" fill="#E67205" />
+                                </svg>
+                            </button>
+                            <button class="btn slider__nav-btn slider__nav-btn--next travel__slider-nav--next">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.172953 10.8606L13.6019 10.8606L7.43364 17.0289L9.00054 18.5847L17.8281 9.75713L9.00054 0.929544L7.44468 2.48541L13.6019 8.65368L0.172953 8.65368L0.172953 10.8606Z" fill="#E67205" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="travel__slider-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap rules">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h2 class="section__title section__title--ttu">
+                        Важно знать!
+                    </h2>
+                </div>
+                <ul class="rules__list">
+                    <li class="rule-card" tabindex="0">
+                        <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-1.svg');"></i>
+                        <div class="rule-card__title">
+                            Прибытие
+                        </div>
+                        <div class="rule-card__description">
+                            Встреча за 20–30 минут до запланированного времени начала тура.
+                        </div>
+                    </li>
+                    <li class="rule-card" tabindex="0">
+                        <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-2.svg');"></i>
+                        <div class="rule-card__title">
+                            Инструктаж
+                        </div>
+                        <div class="rule-card__description">
+                            Перед каждой поездкой проводится инструктаж по использованию ТС и технике вождения.
+                        </div>
+                    </li>
+                    <li class="rule-card" tabindex="0">
+                        <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-3.svg');"></i>
+                        <div class="rule-card__title">
+                            Маршрут
+                        </div>
+                        <div class="rule-card__description">
+                            Время отправления и маршрут поездки могут измениться из-за преобладающих погодных условий и организационных соображений.
+                        </div>
+                    </li>
+                    <li class="rule-card" tabindex="0">
+                        <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-4.svg');"></i>
+                        <div class="rule-card__title">
+                            Возраст
+                        </div>
+                        <div class="rule-card__description">
+                            Техникой может управлять только человек, достигший шестнадцатилетнего возраста (имеются исключения, уточнять у администратора)
+                        </div>
+                    </li>
+                    <li class="rule-card" tabindex="0">
+                        <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-5.svg');"></i>
+                        <div class="rule-card__title">
+                            Ответственность
+                        </div>
+                        <div class="rule-card__description">
+                            Водитель техники несёт ответственность за своё здоровье и за причинённый транспортному средству вред.
+                        </div>
+                    </li>
+                    <li class="rule-card" tabindex="0">
+                        <i class="rule-card__icon" aria-hidden="true" style="background-image: url('img/rule-icon-6.svg');"></i>
+                        <div class="rule-card__title">
+                            Безопасность
+                        </div>
+                        <div class="rule-card__description">
+                            Все участники подписывают договор о принятии норм и правил безопасности. Также необходимо иметь при себе паспорт или права. Лицам в алкогольном опьянении услуги не оказываются.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section section-gap contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <div class="section__header contacts__header">
+                            <h2 class="section__title">
+                                Наши контакты
+                            </h2>
+                        </div>
+                        <div class="contacts__subtitle">
+                            Нужны квадрациклы для незабываемого отдыха?Позвоните нам!
+                        </div>
+                        <div class="contacts__items">
+                            <div class="contacts__item contacts__item--column">
+                                <a href="tel:+7 (999) 750-05-90" class="contacts__phone">+7 (999) 750-05-90</a>
+                                <ul class="social social--colored contacts__social">
+                                    <li class="social__item contacts__social-item">
+                                        <a class="social__link social__link--whatsapp contacts__social-link" href="#">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.6942 4.55454C19.6524 2.49241 16.941 1.22778 14.049 0.988745C11.1569 0.749713 8.27462 1.55202 5.92202 3.25094C3.56941 4.94987 1.90135 7.43358 1.21871 10.2541C0.536072 13.0745 0.883796 16.0461 2.19916 18.6328L0.907966 24.9015C0.894568 24.9638 0.894189 25.0283 0.906851 25.0909C0.919514 25.1534 0.944946 25.2127 0.981557 25.265C1.03519 25.3443 1.11175 25.4053 1.201 25.44C1.29026 25.4747 1.38797 25.4813 1.48109 25.459L7.62485 24.0027C10.2043 25.2848 13.1549 25.6102 15.9516 24.9209C18.7484 24.2317 21.21 22.5726 22.8983 20.2388C24.5866 17.905 25.3922 15.0479 25.1717 12.1759C24.9512 9.3039 23.719 6.60326 21.6942 4.55454ZM19.7786 19.8437C18.3659 21.2524 16.5468 22.1823 14.5776 22.5024C12.6084 22.8225 10.5884 22.5165 8.80232 21.6278L7.94598 21.204L4.17944 22.0961L4.19059 22.0492L4.9711 18.2582L4.55186 17.4308C3.63923 15.6385 3.31729 13.6033 3.63216 11.6167C3.94702 9.63021 4.88253 7.79431 6.30467 6.37202C8.09161 4.58563 10.5149 3.58209 13.0416 3.58209C15.5684 3.58209 17.9916 4.58563 19.7786 6.37202C19.7938 6.38947 19.8102 6.40586 19.8276 6.42108C21.5924 8.21208 22.5776 10.6281 22.5684 13.1425C22.5593 15.6569 21.5564 18.0657 19.7786 19.8437Z" fill="#E67205" />
+                                                <path d="M19.4439 17.063C18.9823 17.79 18.2531 18.6798 17.3365 18.9005C15.7309 19.2886 13.2667 18.9139 10.2004 16.055L10.1625 16.0215C7.46637 13.5217 6.76614 11.441 6.93562 9.79081C7.02928 8.85419 7.8098 8.00678 8.46766 7.45373C8.57167 7.36496 8.695 7.30176 8.8278 7.26918C8.9606 7.2366 9.09918 7.23555 9.23246 7.26611C9.36574 7.29666 9.49002 7.35798 9.59536 7.44516C9.70071 7.53233 9.78419 7.64295 9.83914 7.76816L10.8315 9.9982C10.896 10.1428 10.9199 10.3022 10.9006 10.4594C10.8814 10.6165 10.8197 10.7655 10.7222 10.8902L10.2205 11.5414C10.1128 11.6758 10.0478 11.8394 10.0339 12.0111C10.02 12.1828 10.0578 12.3547 10.1424 12.5048C10.4234 12.9976 11.0969 13.7224 11.8439 14.3936C12.6824 15.1518 13.6124 15.8454 14.2011 16.0818C14.3586 16.1461 14.5318 16.1618 14.6984 16.1268C14.8649 16.0919 15.0172 16.0078 15.1355 15.8855L15.7175 15.299C15.8298 15.1883 15.9695 15.1093 16.1223 15.0701C16.2751 15.0309 16.4355 15.033 16.5872 15.076L18.9444 15.745C19.0744 15.7849 19.1936 15.854 19.2928 15.947C19.3921 16.04 19.4687 16.1545 19.5169 16.2817C19.5651 16.4088 19.5836 16.5454 19.571 16.6808C19.5583 16.8162 19.5149 16.9469 19.4439 17.063Z" fill="#E67205" />
+                                            </svg>
+                                            WhatsApp
+                                        </a>
+                                    </li>
+                                    <li class="social__item contacts__social-item">
+                                        <a class="social__link social__link--telegram contacts__social-link" href="#">
+                                            <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.03908 7.67733L20.8296 0.0928264C21.7481 -0.237008 22.5503 0.31555 22.2527 1.6961L22.2544 1.69439L18.8847 17.4738C18.635 18.5925 17.9662 18.8645 17.0305 18.3375L11.899 14.5784L9.42395 16.9484C9.15027 17.2204 8.91935 17.45 8.3891 17.45L8.75344 12.2593L18.2638 3.71931C18.6778 3.35717 18.1714 3.15315 17.6258 3.51359L5.87295 10.8686L0.806455 9.2976C-0.293396 8.95076 -0.317343 8.20438 1.03908 7.67733Z" fill="#E67205" />
+                                            </svg>
+                                            Telegram
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts__item">
+                                <span class="contacts__item-title">
+                                    Адрес:
+                                </span>
+                                <span class="contacts__item-subtitle">
+                                    с. Черемушки ул. Центральная 10
+                                </span>
+                            </div>
+                            <div class="contacts__item">
+                                <span class="contacts__item-title">
+                                    Электронная почта
+                                </span>
+                                <a class="contacts__item-subtitle" href="mailto:cf-travel@mail.ru">
+                                    cf-travel@mail.ru
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe src="https://yandex.uz/map-widget/v1/?ll=34.293300%2C55.172438&mode=whatshere&whatshere%5Bpoint%5D=34.283547%2C55.175627&whatshere%5Bzoom%5D=17&z=13.17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__copyright">
+                <a href="#" class="footer__privacy">
+                    Политика конфиденциальности
+                </a>
+                <div class="footer__copyright-text">
+                    @ 2013 — 2024 CF-Travel | CF-Travel   Все права защищены
+                </div>
+            </div>
+            <a class="footer__developer" href="#" target="_blank" rel="noindex noopener">
+                <div class="footer__developer-item">
+                    <img src="img/developer-logo.svg" alt="Business-UP Digital Agency logo" class="footer__developer-logo" loading="lazy">
+                </div>
+                <div class="footer__developer-item">
+                    <div class="footer__developer-text">
+                        Разработка и&nbsp;продвижение, с&nbsp;любовью
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
+<div id="callback" class="modal callback">
+    <div class="modal__inner callback__inner">
+        <button class="btn modal__close">
+            Закрыть модальное окно
+        </button>
+        <h2 class="modal__title callback__title">
+            Заказать звонок
+        </h2>
+        <form class="form callback__form">
+            <div class="form__group">
+                <span class="form__label">Имя <i>*</i></span>
+                <input class="form__field" type="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="form__group">
+                <span class="form__label">Номер телефона <i>*</i></span>
+                <input class="form__field" type="tel" placeholder="999 123 45 67" required>
+            </div>
+            <button class="btn cf-button huge orange callback__form-submit">
+                Перезвонить мне
+            </button>
+            <label class="checkbox callback__form-agreement" tabindex="0">
+                <input type="checkbox" name="agree">
+                <span>
+                    Даю свое согласие на обработку персональных данных
+                </span>
+            </label>
+        </form>
+    </div>
+</div>
+<script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/libs/fancybox.umd.js"></script>
+<script src="js/libs/vanilla-calendar.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
